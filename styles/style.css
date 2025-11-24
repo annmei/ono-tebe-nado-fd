@@ -263,3 +263,64 @@ ul {
   color: #000;
   text-decoration: underline;
 }
+
+.about {
+  /* вся секция */
+  display: grid;
+  grid-template-columns: 312px auto;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 153px;
+  padding-left: 47px;
+  height: 595px;
+  width: 1052px;
+}
+
+.about__column {
+  /* класс для колонок */
+}
+
+.about__logo {
+  /* контейнер с логотипом */
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  /* изображение логотипа */
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  /* заголовок секции */
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  padding-top: 101px;
+}
+
+.about__text {
+  margin-top: 100px;
+  width: 693px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__text-text {
+  /* блок для текстов (параграфов) секции */
+  font-family: Raleway;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+
+}
