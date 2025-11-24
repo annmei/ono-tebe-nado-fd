@@ -4,6 +4,11 @@ address {
   padding: 0;
   text-underline-offset: none;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 .header {
   /* вся шапка */
@@ -45,7 +50,7 @@ address {
   width: 138px;
 }
 
-.header__link .address /*.lots_link*/ {
+.header__link /*.lots_link*/ {
   /* навигация и адрес + посмотреть больше под лотами*/
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -59,6 +64,9 @@ address {
   justify-self: end;
   align-items: flex-start;
   line-height: 24.3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #000;
 }
 
 .cover {
@@ -116,12 +124,14 @@ address {
 .cover__description {
   /* контейнер для подзаголовка и кнопки */
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   gap: 78px;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  margin: 55px 50px 50px 50px;
+  height: 51px;
 }
 
 .cover__description-text {
@@ -129,7 +139,8 @@ address {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  word-spacing: 20px;
+  word-spacing: 19px;
+  line-height: 28px;
 }
 
 .bet-button {
@@ -141,38 +152,114 @@ address {
   text-align: center;
   color: #fff;
   background-color: transparent;
+  padding: 12px 31px 11px 32px;
 }
 
-/* оглавление отдела карточек и about*/
-.section_header {
+.lots {
+  /* вся секция */
+  margin: 180px 24px 24px;
+  height: 723px;
+}
+
+.lots__heading {
+  /* оглавление отдела карточек и about*/
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
+  padding-left: 40px;
 }
 
-.lots_list {
+.lots__card-list {
+  /* список карточек */
   color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
   position: relative;
   z-index: 1;
+  padding-top: 27px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-/* название карточек*/
-.lots_header {
+
+.lots__card-list-item {
+  /* пункт списка карточек */
+  height: 596px;
+  width: 334px;
+}
+
+.card-link {
+  /* ссылка, обрамляющая карточку */
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  /* карточка */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card_type_film {
+  /* для фона карточек */
+  background-image: url(/images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  /* для фона карточек */
+  background-image: url(/images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  /* для фона карточек */
+  background-image: url(/images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__title {
+  /* заголовок карточки*/
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 22px;
+  position: relative;
+  z-index: 1;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  padding: 48px 40px 40px;
 }
 
 /* текст карточек и текст about */
-.lots_text .about_text {
+.card__text /*.about_text  */ {
+  /* текст карточки */
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
+  position: relative;
+  z-index: 1;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
+  line-height: 120%;
 }
 
-/* .header__menu{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content:space-between;
-} */
+.lots__look-more-link {
+  /* ссылка «Посмотреть больше» */
+  margin-left: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  text-decoration: underline;
+}
