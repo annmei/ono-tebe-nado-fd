@@ -2,8 +2,8 @@ address {
   font-style: normal;
   margin: 0;
   padding: 0;
-  text-underline-offset: none;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -58,15 +58,17 @@ ul {
 }
 
 .address {
-  display: flex;
-  flex-direction: column;
-  max-width: 240px;
-  justify-self: end;
-  align-items: flex-start;
-  line-height: 24.3px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #000;
+  line-height: 24.3px;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  max-width: 240px;
 }
 
 .cover {
@@ -268,10 +270,11 @@ ul {
   /* вся секция */
   display: grid;
   grid-template-columns: 312px auto;
-  margin-left: 24px;
   margin-right: 24px;
-  margin-top: 153px;
-  padding-left: 47px;
+  margin-top: 118px;
+  margin-bottom: 180px;
+  padding-left: 71px;
+  padding-top: 35px;
   height: 595px;
   width: 1052px;
 }
@@ -318,9 +321,70 @@ ul {
 .about__text-text {
   /* блок для текстов (параграфов) секции */
   font-family: Raleway;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
 
+.footer {
+  /* подвал */
+  width: 1100px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  text-decoration-skip-ink: none;
+}
 
+.address__footer {
+  width: 264px;
+  height: 98px;
+}
+.footer__menu {
+  /* блок навигации по списку ссылок */
+}
+
+.footer__menu-list {
+  /*  список пунктов меню */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__menu-list-item {
+  /* пункт списка меню */
+}
+
+.footer__menu-link {
+  /* каждая ссылка в пункте списка */
+}
+
+.footer__menu-link_active {
+  /* выбранная ссылка меню (без подчёркивания) */
+}
+
+.footer__social-list {
+  /* cписок ссылок на социальные сети */
+  justify-content: end;
+  display: flex;
+  gap: 48px;
+}
+
+.footer__social-list-item {
+  /* пункт списка ссылок на социальные сети */
+}
+
+.footer__social-link {
+  /* ссылка на социальные сети */
+}
+
+.footer__social-icon {
+  /* иконка социальной сети */
+  height: 48px;
 }
