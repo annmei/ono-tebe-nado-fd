@@ -56,6 +56,10 @@ ul {
   text-decoration: none;
 }
 
+.header__links-list-item_no-bullet {
+  list-style-type: none;
+}
+
 .address {
   font-family: "Raleway", "Helvetica Neue", "Arial", sans-serif;
   font-weight: 400;
@@ -161,7 +165,6 @@ ul {
 .lots {
   /* вся секция */
   margin: 180px 24px 24px;
-  min-height: 723px;
 }
 
 .lots__heading {
@@ -353,6 +356,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  line-height: 21px;
 }
 
 .footer__menu-list-item {
